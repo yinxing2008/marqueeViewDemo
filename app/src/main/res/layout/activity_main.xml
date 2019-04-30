@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.sunfusheng.marqueeview.MarqueeView
-        android:id="@+id/marqueeView"
+        android:id="@+id/marqueeView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_margin="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -20,4 +21,46 @@
         app:mvTextColor="#000000"
         app:mvTextSize="13sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/marqueeView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mvDirection="top_to_bottom"
+        app:mvSingleLine="true"
+        app:mvTextColor="#000000"
+        app:mvTextSize="13sp" />
+
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/marqueeView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mvDirection="left_to_right"
+        app:mvSingleLine="true"
+        app:mvTextColor="#000000"
+        app:mvTextSize="13sp" />
+
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/marqueeView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mvDirection="right_to_left"
+        app:mvSingleLine="true"
+        app:mvTextColor="#000000"
+        app:mvTextSize="13sp" />
+
+</LinearLayout>

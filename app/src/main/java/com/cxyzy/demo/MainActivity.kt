@@ -14,8 +14,20 @@ class MainActivity : AppCompatActivity() {
         messages.add("《赋得古原草送别》")
         messages.add("离离原上草，一岁一枯荣。")
         messages.add("野火烧不尽，春风吹又生。")
-        val marqueeView = findViewById<MarqueeView<String>>(R.id.marqueeView)
+        val marqueeView = findViewById<MarqueeView<String>>(R.id.marqueeView1)
         marqueeView.setFlipInterval(1000)
         marqueeView.startWithList(messages)
+
+        val marqueeView2 = findViewById<MarqueeView<String>>(R.id.marqueeView2)
+        marqueeView2.setFlipInterval(1000)
+        marqueeView2.startWithList(messages)
+
+        val marqueeView3 = findViewById<MarqueeView<String>>(R.id.marqueeView3)
+        marqueeView3.setFlipInterval(1000)
+        marqueeView3.startWithList(messages)
+
+        val marqueeView4 = findViewById<MarqueeView<String>>(R.id.marqueeView4)
+        marqueeView4.setFlipInterval(1000)
+        marqueeView4.startWithList(messages)
     }
 }
