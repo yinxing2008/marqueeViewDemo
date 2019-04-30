@@ -26,5 +26,5 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'com.github.sunfusheng:MarqueeView:V1.4.0'
+    implementation 'com.sunfusheng:MarqueeView:1.4.1'
 }
